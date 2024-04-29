@@ -1,10 +1,19 @@
 # Product Search Angular App
 
-## Installing
+## The Assignment
+
+Create either a console or a UI application that displays products for sale.
+
+The products are available in this web service: https://dummyjson.com/products. Products can be filtered using a path
+segment, this will return a product with an ID of 1 https://dummyjson.com/products/1 and this will filter all products that
+have “laptop” in the title or description: https://dummyjson.com/products/search?q=Laptop.
+
+
+## Installing / Running Locally
 
 Install npm if not already installed. Can use nvm to accomplish this: https://github.com/nvm-sh/nvm (npm version 10+ (and node version 18+) recommended).
 
-Run `npm i`
+Run `npm i` after cloning repository. 
 
 Ensure the Angular CLI is installed with `npm install @angular/cli`. 
 
