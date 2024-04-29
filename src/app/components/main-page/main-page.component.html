@@ -1,0 +1,52 @@
+<div class="searchSection">
+    <div>
+        <p>Search by Product ID:</p>
+        <input #idSearchInput [(ngModel)]="productId" (keyup.enter)="searchById()" />
+        <button type="button" (click)="searchById()">Search</button>
+    </div>
+    <div>
+        <p>Search by Key Word:</p>
+        <input #keyWordSearchInput [(ngModel)]="keyWord" (keyup.enter)="searchByKeyWord()" />
+        <button type="button" (click)="searchByKeyWord()">Search</button>
+    </div>
+</div>
+    
+<div *ngIf="!searchHasBeenRun; else results">
+    Please enter in a product id or key word to view results.
+</div>
+
+<ng-template #results>
+    <div *ngIf="searchResults.length !== 0; else noResults">
+        <table mat-table [dataSource]="searchResults" class="mat-elevation-z8">
+            <ng-container [matColumnDef]="column" *ngFor="let column of tableColumns">
+              <th mat-header-cell *matHeaderCellDef>{{ column }}</th>
+              <td mat-cell *matCellDef="let product; let i = index">
+                <div *ngIf="column == 'thumbnail'" class="thumbnail">
+                    <img class="table-image-thumbnail" [src]="product[column]"/>
+                </div>
+                
+                <div *ngIf="column == 'images'" class="d-flex">
+                    <div *ngIf="product[column].length == 0; else productImages">
+                        No images available
+                    </div>
+                    <ng-template #productImages>
+                        <img class="table-image" [src]="product[column][productImagesDisplayed[i]]"/>
+                        <div class="d-flex justify-content-center w-100 align-items-center">
+                            <mat-icon [ngClass]="{'disabled': product[column].length == 1}" (click)="swapImage(-1, i)">arrow_left</mat-icon>
+                            <mat-icon [ngClass]="{'disabled': product[column].length == 1}" (click)="swapImage(1, i)">arrow_right</mat-icon>
+                        </div>
+                    </ng-template>
+                </div>
+                <div *ngIf="column !== 'thumbnail' && column !== 'images'">
+                    {{ product[column] }}
+                </div>
+                </td>
+            </ng-container>
+            <tr mat-header-row *matHeaderRowDef="tableColumns"></tr>
+            <tr mat-row *matRowDef="let productrow; columns: tableColumns"></tr>
+          </table>
+    </div>
+    <ng-template #noResults>
+        {{ noResultsMessage() }} 
+    </ng-template>
+</ng-template>

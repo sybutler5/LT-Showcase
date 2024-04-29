@@ -1,0 +1,26 @@
+
+.searchResults {
+    margin-top: 40px;
+}
+
+.table-image {
+    max-height: 75px;
+    width: auto;
+}
+
+.table-image-thumbnail {
+    max-height: 75px;
+    width: auto;
+}
+
+.searchSection {
+    margin-bottom: 40px;
+}
+
+.disabled {
+    color: gray
+}
+
+.thumbnail {
+    max-width: 100px;
+}
