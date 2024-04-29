@@ -2,6 +2,10 @@
 
 ## Installing
 
+Install npm if you don't have it, e.g. through https://github.com/nvm-sh/nvm. npm version 10+ (and node version 18+) recommended.
+Install angular if you don't have it with `npm install angular`
+Run `npm i`
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.5.
 
