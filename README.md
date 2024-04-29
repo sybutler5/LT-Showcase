@@ -4,7 +4,9 @@
 
 Create either a console or a UI application that displays products for sale.
 
-The products are available in this web service: https://dummyjson.com/products. Products can be filtered using a path
+The products are available in this web service: https://dummyjson.com/products. 
+
+Products can be filtered using a path
 segment, this will return a product with an ID of 1 https://dummyjson.com/products/1 and this will filter all products that
 have “laptop” in the title or description: https://dummyjson.com/products/search?q=Laptop.
 
