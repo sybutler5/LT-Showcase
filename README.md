@@ -4,8 +4,11 @@
 
 Install npm if you don't have it, e.g. through https://github.com/nvm-sh/nvm. npm version 10+ (and node version 18+) recommended.
 
-Install angular if you don't have it with `npm install angular`
 Run `npm i`
+
+Ensure the Angular CLI is installed with `npm install @angular/cli`. 
+
+Run `ng serve` to host application on `localhost:4200`
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.5.
@@ -29,15 +32,3 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-
-
-##### npm install --save @angular/material
-nvm use 18
-npm install angular
-npm i
-ng serve
-localhost:4200
-
-
-
-basic instructions# LT-Showcase
