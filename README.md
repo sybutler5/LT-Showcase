@@ -1,4 +1,4 @@
-# LT Technical Showcase
+# Product Search Angular App
 
 ## Installing
 
