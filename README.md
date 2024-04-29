@@ -2,7 +2,7 @@
 
 ## Installing
 
-Install npm if you don't have it, e.g. through https://github.com/nvm-sh/nvm. npm version 10+ (and node version 18+) recommended.
+Install npm if you don't have it: https://github.com/nvm-sh/nvm (npm version 10+ (and node version 18+) recommended).
 
 Run `npm i`
 
