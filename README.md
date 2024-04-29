@@ -3,6 +3,7 @@
 ## Installing
 
 Install npm if you don't have it, e.g. through https://github.com/nvm-sh/nvm. npm version 10+ (and node version 18+) recommended.
+
 Install angular if you don't have it with `npm install angular`
 Run `npm i`
 
