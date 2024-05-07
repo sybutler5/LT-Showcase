@@ -17,8 +17,6 @@ Install npm if not already installed. Can use nvm to accomplish this: https://gi
 
 Run `npm i` after cloning repository. 
 
-Ensure the Angular CLI is installed with `npm install @angular/cli`. 
-
 Run `ng serve` to host application on `localhost:4200`
 
 ## Build
